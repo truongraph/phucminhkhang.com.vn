@@ -1,0 +1,68 @@
+@import url("./assets/font/MainInter/inter.css");
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+  }
+ /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+      -ms-overflow-style: none;  /* IE and Edge */
+      scrollbar-width: none;  /* Firefox */
+}
+  html,
+  .p-component {
+    /* font-family:'SF Pro Display', sans-serif !important; */
+    font-family: "InterVariable", sans-serif !important;
+  }
+ 
+  html {
+    overscroll-behavior-y: none;
+    overscroll-behavior-x: none;
+    @apply bg-white h-full text-[10px] lg:text-[10px] xl:text-[12px] 2xl:text-[14px];
+  }
+  body {
+    overscroll-behavior-y: none;
+    overscroll-behavior-x: none;
+    /* overflow: hidden; */
+    @apply bg-white h-full;
+  }
+  button {
+    @apply focus-visible:outline-none;
+  }
+  ::-webkit-scrollbar {
+    @apply h-2 w-2;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-xl border-2 border-solid border-transparent bg-gray-500 bg-clip-padding;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply border-0;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+}
+@layer components {
+  #root {
+    @apply bg-white h-full;
+  }
+  vite-error-overlay {
+    @apply z-50;
+  }
+}
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
