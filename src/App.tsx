@@ -1,7 +1,7 @@
 import { RecoilRoot } from "recoil";
 import { ReactFlowProvider } from "reactflow";
 import { QueryClient, QueryClientProvider } from "react-query";
-import { CookiesProvider } from "react-cookie";
+//import { CookiesProvider } from "react-cookie";
 import AppRouter from "./AppRouter";
 
 function App() {
@@ -20,9 +20,7 @@ function App() {
       <RecoilRoot>
         <ReactFlowProvider>
           <QueryClientProvider client={queryClient}>
-            <CookiesProvider>
-              <AppRouter />
-            </CookiesProvider>
+          <AppRouter />
           </QueryClientProvider>
         </ReactFlowProvider>
       </RecoilRoot>

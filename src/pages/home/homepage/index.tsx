@@ -3,12 +3,12 @@ import React from "react";
 
 const HomePage: React.FC = () => {
   return (
-    <div className="h-full flex items-center justify-center bg-[#e6e6e6]">
-      <div className="text-center bg-[#fff] p-30 rounded-2xl">
+    <div className="h-full flex items-center justify-center bg-[#ffffff] p-20">
+      <div className="text-center p-30 rounded-2xl">
         <img
           src={"/logo/logo.png"}
           alt="Logo"
-          className={clsx(["w-2/6 z-max text-center block m-auto mb-10"])}
+          className={clsx(["w-1/6 z-max text-center block m-auto mb-10"])}
         />
         <h1 className="text-4xl font-bold text-gray-900">Hệ thống đang trong quá trình phát triển!</h1>
         <p className="mt-4 text-2xl text-gray-400">
